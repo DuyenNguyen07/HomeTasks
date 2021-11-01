@@ -1,0 +1,29 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+#
+.gradle
+/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Cache of project
+.gradletasknamecache
+
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Gradle:
+.idea/gradle.xml
+
+# IntelliJ
+/out/

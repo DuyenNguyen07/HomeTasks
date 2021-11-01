@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "testng.org">
+<suite name="UI-Test-Suite">
+    <test name="DN-UI-Test">
+        <classes>
+            <class name="com.DuyenNguyen.experimenting.selenium4.TestCalculator_com"
+        </classes>
+    </test>
+</suite>
