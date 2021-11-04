@@ -9,8 +9,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 public class TestCalculator_com {
     /*
@@ -26,9 +28,9 @@ public class TestCalculator_com {
      */
 
     // Navigate to calculator.com
-    public WebDriver navigateCalculator_com() {
+    public WebDriver navigateCalculator_com() { //rename _
         //? driver.get(url) vs driver.navigate().to(url)
-        driver.get("https://www.calculator.com/");
+        driver.navigate().to("https://www.calculator.com/");
         return driver;
     }
 
@@ -89,6 +91,15 @@ public class TestCalculator_com {
         Assert.assertEquals(driver.getCurrentUrl(), url);
     }
 
+    public void calculatorNavigationBy(String url, By elementBy) {
+        navigateCalculator_com();
+        WebElement element = driver.findElement(elementBy);
+        Assert.assertTrue(element.isDisplayed());
+        Assert.assertTrue(element.isEnabled());
+        element.click();
+        Assert.assertEquals(driver.getCurrentUrl(), url);
+    }
+
     // [UI] Verify standard calculator navigation
     @Test
     public void testStandardCalculatorNavigation() throws InterruptedException {
@@ -108,9 +119,11 @@ public class TestCalculator_com {
     }
 
     // [UI] Verify percent calculator navigation
+
     @Test
     public void testPercentCalculatorNavigation() throws InterruptedException {
-        calculatorNavigation("https://www.calculator.com/calculate/percentage/", "/html/body/div[2]/div[1]/div[1]/div[4]");
+        By xpathBy = By.xpath("/html/body/div[2]/div[1]/div[1]/div[4]");
+        calculatorNavigationBy("https://www.calculator.com/calculate/percentage/", xpathBy);
     }
 
     /*
@@ -265,7 +278,7 @@ public class TestCalculator_com {
 
     }
 
-    @Test
+    @Test //(invocationCount = 1)
     public void switchTab() {
         ChromeDriverService service = ChromeDriverService.createDefaultService();
         WebDriver driver = new ChromeDriver(service);
@@ -275,7 +288,6 @@ public class TestCalculator_com {
         driver.findElement(By.name("btnK")).click();
         String window1 = driver.getWindowHandle();
         System.out.println("Window 1 is " + window1);
-
 
         Set windowHandles = driver.getWindowHandles(); // Get all window handles
         System.out.println("Windows is " + windowHandles);
@@ -307,20 +319,31 @@ public class TestCalculator_com {
 
     @Test
     public void openNewTab() {
-        ChromeDriverService service = ChromeDriverService.createDefaultService();
-        WebDriver driver = new ChromeDriver(service);
-        driver.get("https://www.google.com/");
+//        ChromeDriverService service = ChromeDriverService.createDefaultService();
+//        WebDriver driver = new ChromeDriver(service);
+//        driver.navigate().to("https://www.google.com/");
+//
+//        System.out.println("Opening new tab");
+////        driver.findElement(By.xpath("/html/body")).sendKeys(Keys.CONTROL + "t");
+//        Actions action = new Actions(driver);
+//        action.sendKeys(Keys.CONTROL + "t");
+//
+//        driver.navigate().to("https://www.youtube.com/");
+//
+//        driver.close();
 
-        //? How to open new tab in the same window
-        System.out.println("Opening new tab");
-//        driver.findElement(By.xpath("/html/body")).sendKeys(Keys.CONTROL + "t");
-        Actions action = new Actions(driver);
-        action.sendKeys(Keys.CONTROL + "t");
+        driver.get("http://www.google.com/");
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 
-        driver.get("https://www.youtube.com/");
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("window.open()");
 
-        driver.close();
+        //Switch to new tab
+        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+        driver.get("http://www.yahoo.com/");
     }
+
 
 
 
