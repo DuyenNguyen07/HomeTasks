@@ -22,7 +22,6 @@ public class RestAssuredTest extends RestAssuredBaseTest {
                 .addParam("key", "eb27251e68054eabb1944815212610")
                 .addParam("q", "Tokyo");
         Response rp = RestAssured.given(spec.build()).get("/forecast.json");
-        //System.out.println(rp.asString()); // show file as a string
         rp.then().log().body();
 
         rp.then().body("location.name", Matchers.is("Tokyo"));
@@ -77,6 +76,21 @@ public class RestAssuredTest extends RestAssuredBaseTest {
         Response rp = RestAssured.given(spec.build()).get("/current.json");
         rp.then().log().all();
         rp.then().assertThat().log().all().body("location.country", equalTo("Vietnam"));
+    }
+
+    // Location name
+    @Test
+    public void testLocationName() {
+        spec
+                .setBaseUri(baseUrl)
+                //.addParam("key", "eb27251e68054eabb1944815212610")
+                .addParam("key", "29bebb4c6e3844ffafe115519210709")
+                .addParam("q", "auto:ip")
+                .addParam("days", "10")
+                .addParam("dt", "2021-10-26");
+        Response rp = RestAssured.given(spec.build()).get("/current.json");
+        //log.info("gaugau");
+        rp.then().assertThat().log().all().body("location.name", equalTo("Hanh Thong Tay"));
     }
 
     @Test

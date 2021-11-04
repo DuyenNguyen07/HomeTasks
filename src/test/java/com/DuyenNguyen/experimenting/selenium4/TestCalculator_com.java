@@ -15,18 +15,12 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class TestCalculator_com {
-    /*
-    createServiceWithConfig(new ChromeOptions()) vs createDefaultService()
-    ? default configuration
-    ? how to setup the supplied configuration
-     */
     static ChromeDriverService service = ChromeDriverService.createDefaultService();
     static WebDriver driver = new ChromeDriver(service);
 
     /*
     Calculator.com
      */
-
     // Navigate to calculator.com
     public WebDriver navigateCalculator_com() { //rename _
         //? driver.get(url) vs driver.navigate().to(url)
@@ -44,33 +38,16 @@ public class TestCalculator_com {
         String currentURL = driver.getCurrentUrl();
         System.out.println("The current url is " + currentURL);
         Assert.assertEquals(currentURL, "https://www.calculator.com/");
-        //driver.quit();
+        driver.quit();
     }
 
     // [UI] Verify page src contains sth
     @Test
     public void testCalculatorPageSourceContains() {
         navigateCalculator_com();
-//        String pageSource = driver.getPageSource();
-//        System.out.println("The page source is " + pageSource);
         Assert.assertTrue(driver.getPageSource().contains("<meta name=\"description\" content=\"calculate anything, anytime," +
                 " anywhere... Free online calculators for everything. Some solve problems, some satisfy curiosity and some simply" +
                 " for fun.\">\n"));
-
-        /*
-        driver.close()
-        closes only current window Selenium running, WebDriver session remains active
-        ? but why assert test fail
-         */
-//        driver.close();
-//        System.out.println("Closed window");
-        /*
-        ? Should we use assertTrue (just show expected true, actual false when we got failure)
-        ? When we should use assertTrue
-        Assert.assertTrue(driver.getPageSource().contains("<meta name=\"description\" content=\"calculate anything, anytime," +
-                " anywhere... Free online calculators for everything. Some solve problems, some satisfy curiosity and some simply" +
-                " for fun.\">\n"));
-         */
     }
 
     // [UI] Verify Calculator title
@@ -79,7 +56,7 @@ public class TestCalculator_com {
         navigateCalculator_com();
         System.out.println("The title is " + driver.getTitle());
         Assert.assertTrue(driver.getTitle().contains("calculator.com"));
-//        driver.quit();
+        driver.quit();
     }
 
     public void calculatorNavigation(String url, String xpath) {
@@ -139,7 +116,7 @@ public class TestCalculator_com {
     public void testLoveCalculatorTitle() throws InterruptedException {
     navigateLoveCalculator();
         Assert.assertEquals(driver.getTitle(), "The Love Calculator");
-//        driver.quit();
+        driver.quit();
     }
 
     // [UI] Verify the love calculator name
@@ -203,7 +180,7 @@ public class TestCalculator_com {
         String name2 = "nguyen";
         testAddName(driver, name1, "name1");
         testAddName(driver, name2, "name2");
-//        driver.quit();
+        driver.quit();
     }
 
 
@@ -238,7 +215,7 @@ public class TestCalculator_com {
         driver.findElement(By.name("clear")).click();
         testAddName(driver, "", "name1"); // name1 cleared ==> name=""
         testAddName(driver, "", "name2"); // name2 cleared ==> name=""
-//        driver.quit();
+        driver.quit();
     }
 
 
@@ -271,11 +248,7 @@ public class TestCalculator_com {
         testCalculatorPageSourceContains();
         testFractionsCalculatorNavigation();
 
-
         driver.quit();
-
-        //System.out.println();
-
     }
 
     @Test //(invocationCount = 1)
@@ -293,18 +266,6 @@ public class TestCalculator_com {
         System.out.println("Windows is " + windowHandles);
         Iterator<String> iterator = windowHandles.iterator();
 
-        //? Method 1
-//        System.out.println("Initial tmp1");
-//        String tmp1 = iterator.next();
-//        System.out.println("Initial tmp2");
-//        String tmp2 = iterator.next();
-//        driver.switchTo().window(tmp1);
-//        Thread.sleep(2000);
-//        System.out.println("Switch to second window");
-//        driver.switchTo().window(tmp2);
-//        driver.quit();
-
-        //? Method 2
         String window2 = null;
         while(iterator.hasNext()){
             String tmp = iterator.next();
@@ -319,19 +280,6 @@ public class TestCalculator_com {
 
     @Test
     public void openNewTab() {
-//        ChromeDriverService service = ChromeDriverService.createDefaultService();
-//        WebDriver driver = new ChromeDriver(service);
-//        driver.navigate().to("https://www.google.com/");
-//
-//        System.out.println("Opening new tab");
-////        driver.findElement(By.xpath("/html/body")).sendKeys(Keys.CONTROL + "t");
-//        Actions action = new Actions(driver);
-//        action.sendKeys(Keys.CONTROL + "t");
-//
-//        driver.navigate().to("https://www.youtube.com/");
-//
-//        driver.close();
-
         driver.get("http://www.google.com/");
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 
