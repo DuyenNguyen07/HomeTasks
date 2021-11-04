@@ -2,7 +2,7 @@
 <suite name="UI-Test-Suite">
     <test name="DN-UI-Test">
         <classes>
-            <class name="com.DuyenNguyen.experimenting.selenium4.TestCalculator_com"
+            <class name="com.DuyenNguyen.experimenting.selenium4.TestCalculator_com"></class>
         </classes>
     </test>
 </suite>
