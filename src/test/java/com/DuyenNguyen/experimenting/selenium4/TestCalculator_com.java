@@ -3,8 +3,6 @@ package com.DuyenNguyen.experimenting.selenium4;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -22,8 +20,7 @@ public class TestCalculator_com {
     Calculator.com
      */
     // Navigate to calculator.com
-    public WebDriver navigateCalculator_com() { //rename _
-        //? driver.get(url) vs driver.navigate().to(url)
+    public WebDriver navigateCalculator() {
         driver.navigate().to("https://www.calculator.com/");
         return driver;
     }
@@ -31,10 +28,7 @@ public class TestCalculator_com {
     // [UI] Verify navigate calculator link
     @Test
     public void testCalculatorLink() {
-//        ChromeDriverService service = ChromeDriverService.createDefaultService();
-//        WebDriver driver = new ChromeDriver(service);
-//        driver.get("https://www.calculator.com/");
-        navigateCalculator_com();
+        navigateCalculator();
         String currentURL = driver.getCurrentUrl();
         System.out.println("The current url is " + currentURL);
         Assert.assertEquals(currentURL, "https://www.calculator.com/");
@@ -44,7 +38,7 @@ public class TestCalculator_com {
     // [UI] Verify page src contains sth
     @Test
     public void testCalculatorPageSourceContains() {
-        navigateCalculator_com();
+        navigateCalculator();
         Assert.assertTrue(driver.getPageSource().contains("<meta name=\"description\" content=\"calculate anything, anytime," +
                 " anywhere... Free online calculators for everything. Some solve problems, some satisfy curiosity and some simply" +
                 " for fun.\">\n"));
@@ -53,14 +47,14 @@ public class TestCalculator_com {
     // [UI] Verify Calculator title
     @Test
     public void testCalculatorTitle() throws InterruptedException {
-        navigateCalculator_com();
+        navigateCalculator();
         System.out.println("The title is " + driver.getTitle());
         Assert.assertTrue(driver.getTitle().contains("calculator.com"));
         driver.quit();
     }
 
     public void calculatorNavigation(String url, String xpath) {
-        navigateCalculator_com();
+        navigateCalculator();
         WebElement element = driver.findElement(By.xpath(xpath));
         Assert.assertTrue(element.isDisplayed());
         Assert.assertTrue(element.isEnabled());
@@ -69,7 +63,7 @@ public class TestCalculator_com {
     }
 
     public void calculatorNavigationBy(String url, By elementBy) {
-        navigateCalculator_com();
+        navigateCalculator();
         WebElement element = driver.findElement(elementBy);
         Assert.assertTrue(element.isDisplayed());
         Assert.assertTrue(element.isEnabled());

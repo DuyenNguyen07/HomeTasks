@@ -9,10 +9,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Selenium4Test extends SeleniumBaseTest {
-    @Test
-    public void testingChromeAndSeleniumBasic() throws InterruptedException {
-        Assert.assertEquals(true, true);
-    }
 
     @Test
     public void testBasingSearchOnGoogleMainPage() {
