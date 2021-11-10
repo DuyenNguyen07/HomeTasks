@@ -4,7 +4,6 @@ import com.DuyenNguyen.experimenting.core.DriverWrapper;
 import com.DuyenNguyen.experimenting.selenium4.UITest.google.pages.GoogleSearchResultPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 public class GoogleHomeSearchPage {
     // Web elements on home search page

@@ -1,0 +1,8 @@
+14:25:22.764 INFO  c.DuyenNguyen.experimenting.BaseTest - Test booking to Paris from 13 February 2022 to 15 February 2022 for 2
+14:25:22.767 INFO  c.DuyenNguyen.experimenting.BaseTest - Choose english language for the site
+14:25:24.683 INFO  c.DuyenNguyen.experimenting.BaseTest - Set destination is Paris
+14:25:24.862 INFO  c.DuyenNguyen.experimenting.BaseTest - Choose arrival dates from 13 February 2022to 15 February 2022
+14:25:26.092 INFO  c.DuyenNguyen.experimenting.BaseTest - Set check in date: 13 February 2022
+14:25:26.151 INFO  c.DuyenNguyen.experimenting.BaseTest - Set check out date: 15 February 2022
+14:25:26.216 INFO  c.DuyenNguyen.experimenting.BaseTest - Set person number: 2
+14:25:26.300 INFO  c.DuyenNguyen.experimenting.BaseTest - Click search button

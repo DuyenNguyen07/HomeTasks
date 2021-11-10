@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7400c362-f11e-481a-ac6b-c6bd6749a41d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-=======
-      <change beforePath="$PROJECT_DIR$/src/test/UITestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/UITestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/selenium4/TestCalculator_com.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/selenium4/TestCalculator_com.java" afterDir="false" />
->>>>>>> 8bf19969343fb3eafd95ea38e8a26041a2190a5a
+      <change beforePath="$PROJECT_DIR$/logback-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/logback-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/pages/BookingHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/pages/BookingHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/testCases/ParisBookingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/testCases/ParisBookingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/google/pages/GoogleHomeSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/google/pages/GoogleHomeSearchPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
       <recent name="com.DuyenNguyen.experimenting.selenium4" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.selenium4.openNewTab">
+  <component name="RunManager" selected="TestNG.booking.testParisBooking">
     <configuration name="Selenium4Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -217,6 +216,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="booking.testParisBooking" type="TestNG">
+      <module name="NewE3.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.booking.testCases" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.booking.testCases.ParisBookingTest" />
+      <option name="METHOD_NAME" value="testParisBooking" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="selenium4.openNewTab" type="TestNG">
       <module name="NewE3.test" />
       <shortenClasspath name="NONE" />
@@ -332,6 +354,7 @@
       <item itemvalue="Gradle.TestCalculator_com.openNewTab" />
       <item itemvalue="Gradle.TestCalculator_com" />
       <item itemvalue="TestNG.selenium4.openNewTab" />
+      <item itemvalue="TestNG.booking.testParisBooking" />
       <item itemvalue="TestNG.GoogleHomeSearchPage.testGoogleSearch" />
       <item itemvalue="TestNG.Selenium4Test.testGoogleSearch" />
       <item itemvalue="TestNG.RestAssured44Test.testingRestAssuredSimpleEndPointVerification" />

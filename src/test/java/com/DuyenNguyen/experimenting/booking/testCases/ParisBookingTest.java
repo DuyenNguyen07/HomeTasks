@@ -12,14 +12,17 @@ public class ParisBookingTest extends BookingSeleniumBaseTest {
         String destination = "Paris";
         String checkinDate = "13 February 2022";
         String checkoutDate = "15 February 2022";
+        int personNumber = 2;
 
+        log.info("Test booking to " + destination + " from " + checkinDate + " to " + checkoutDate +" for " + personNumber + " adult(s)");
         String destinationOnParisPage = new BookingHomePage()
                 .chooseEnglish()
                 .setDestination(destination)
                 .chooseArrivalDates(checkinDate, checkoutDate)
-                .setPersonNumber(2)
+                .setPersonNumber(personNumber)
                 .clickSearchButton()
                 .getDestinationPropertyName();
         assertEquals(destination, destinationOnParisPage);
+        log.info("Finish testing");
     }
 }
