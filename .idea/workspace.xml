@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7400c362-f11e-481a-ac6b-c6bd6749a41d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/reqres/ApiTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/reqres/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/reqres/reqresApiTestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/INFO_log-byDay_IS_UNDEFINED.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/INFO_log-byDay_IS_UNDEFINED.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/testCases/BookingSeleniumBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/testCases/BookingSeleniumBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/calculator/testCases/CalculatorSeleniumBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/calculator/testCases/CalculatorSeleniumBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/calculator/testCases/LoveCalculatorSeleniumBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/calculator/testCases/LoveCalculatorSeleniumBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/selenium4/SeleniumBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/selenium4/SeleniumBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/reqres/ApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/reqres/ApiTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +83,7 @@
       <recent name="com.DuyenNguyen.experimenting.selenium4" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.reqres.getSingleUser">
+  <component name="RunManager" selected="TestNG.C:/Users/Duyen_Nguyen/Desktop/HomeTask/src/test/java/com/DuyenNguyen/experimenting/reqres/reqresApiTestSuite.xml">
     <configuration name="ApiTests.getListUsers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -155,26 +147,15 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCalculator_com" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.DuyenNguyen.experimenting.selenium4.TestCalculator_com&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="C:/Users/Duyen_Nguyen/Desktop/HomeTask/src/test/java/com/DuyenNguyen/experimenting/reqres/reqresApiTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HomeTasks.test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/reqres/reqresApiTestSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="C:/Users/Duyen_Nguyen/Desktop/NewE3/src/test/UITestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="NewE3.test" />
@@ -275,6 +256,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="reqres.createLogin" type="TestNG">
+      <module name="HomeTasks.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="createLogin" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reqres.createRegister" type="TestNG">
+      <module name="HomeTasks.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="createRegister" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="reqres.createSerializedUser" type="TestNG">
       <module name="NewE3.test" />
       <shortenClasspath name="NONE" />
@@ -283,6 +310,51 @@
       <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
       <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
       <option name="METHOD_NAME" value="createSerializedUser" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reqres.createUnsuccessfulLogin" type="TestNG">
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="createUnsuccessfulLogin" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reqres.createUnsuccessfulRegister" type="TestNG">
+      <module name="HomeTasks.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="createUnsuccessfulRegister" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
@@ -321,6 +393,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="reqres.getDelayResponse" type="TestNG">
+      <module name="HomeTasks.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="getDelayResponse" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reqres.getListResource" type="TestNG">
+      <module name="HomeTasks.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="getListResource" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="reqres.getListUsers" type="TestNG">
       <module name="NewE3.test" />
       <shortenClasspath name="NONE" />
@@ -344,6 +462,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="reqres.getSingleResource" type="TestNG">
+      <module name="HomeTasks.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="getSingleResource" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reqres.getSingleResourceNotFound" type="TestNG">
+      <module name="HomeTasks.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="getSingleResourceNotFound" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="reqres.getSingleUser" type="TestNG">
       <module name="NewE3.test" />
       <shortenClasspath name="NONE" />
@@ -352,6 +516,52 @@
       <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
       <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
       <option name="METHOD_NAME" value="getSingleUser" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reqres.getSingleUserNotFound" type="TestNG">
+      <module name="HomeTasks.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="getSingleUserNotFound" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reqres.patchUpdateInformation" type="TestNG">
+      <module name="HomeTasks.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="patchUpdateInformation" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
@@ -524,7 +734,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.TestCalculator_com" />
       <item itemvalue="Gradle.ParisBookingTest.testParisBooking" />
       <item itemvalue="Gradle.ApiTests.getListUsers" />
       <item itemvalue="Gradle.ApiTests.getSingleUser" />
@@ -532,6 +741,16 @@
       <item itemvalue="TestNG.reqres.updateUser" />
       <item itemvalue="TestNG.reqres.removeUser" />
       <item itemvalue="TestNG.reqres.getSingleUser" />
+      <item itemvalue="TestNG.reqres.getSingleResource" />
+      <item itemvalue="TestNG.reqres.getSingleResourceNotFound" />
+      <item itemvalue="TestNG.reqres.patchUpdateInformation" />
+      <item itemvalue="TestNG.reqres.createRegister" />
+      <item itemvalue="TestNG.reqres.createUnsuccessfulRegister" />
+      <item itemvalue="TestNG.reqres.createLogin" />
+      <item itemvalue="TestNG.reqres.createUnsuccessfulLogin" />
+      <item itemvalue="TestNG.reqres.getDelayResponse" />
+      <item itemvalue="TestNG.reqres.getSingleUserNotFound" />
+      <item itemvalue="TestNG.reqres.getListResource" />
       <item itemvalue="TestNG.reqres.createSerializedUser" />
       <item itemvalue="TestNG.reqres.createUser" />
       <item itemvalue="TestNG.selenium4.openNewTab" />
@@ -544,14 +763,15 @@
       <item itemvalue="TestNG.selenium4.testingChromeAndSeleniumBasic" />
       <item itemvalue="TestNG.selenium4.switchTab" />
       <item itemvalue="TestNG.C:/Users/Duyen_Nguyen/Desktop/NewE3/src/test/UITestSuite.xml" />
+      <item itemvalue="TestNG.C:/Users/Duyen_Nguyen/Desktop/HomeTask/src/test/java/com/DuyenNguyen/experimenting/reqres/reqresApiTestSuite.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Duyen_Nguyen/Desktop/HomeTask/src/test/java/com/DuyenNguyen/experimenting/reqres/reqresApiTestSuite.xml" />
         <item itemvalue="Gradle.ApiTests.getListUsers" />
         <item itemvalue="Gradle.ApiTests.getSingleUser" />
         <item itemvalue="Gradle.ParisBookingTest.testParisBooking" />
         <item itemvalue="TestNG.C:/Users/Duyen_Nguyen/Desktop/NewE3/src/test/UITestSuite.xml" />
-        <item itemvalue="Gradle.TestCalculator_com" />
       </list>
     </recent_temporary>
   </component>

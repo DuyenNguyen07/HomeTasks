@@ -48,12 +48,11 @@ public class ApiTests extends RestAssuredBaseTest {
                                         assertThat().
                                                 statusCode(200).
                                                 header("Content-Type", "application/json; charset=utf-8").
-                                                // JSON path id doesn't match. Expected: 2 Actual: null
-                                                body("id", equalTo("2")).
-                                                body("email", equalTo("janet.weaver@reqres.in")).
-                                                body("first_name", equalTo("Janet")).
-                                                body("last_name", equalTo("Weaver")).
-                                                body("avatar", equalTo("https://reqres.in/img/faces/2-image.jpg"));
+                                                body("data.id", equalTo(2)).
+                                                body("data.email", equalTo("janet.weaver@reqres.in")).
+                                                body("data.first_name", equalTo("Janet")).
+                                                body("data.last_name", equalTo("Weaver")).
+                                                body("data.avatar", equalTo("https://reqres.in/img/faces/2-image.jpg"));
         response.log().body();
         log.info("Finish get single user has ID: " + id);
     }
@@ -61,6 +60,71 @@ public class ApiTests extends RestAssuredBaseTest {
     @Test
     public void getSingleUserNotFound() {
         log.info("Get single user not found");
+        int id = 23;
+        String endpoint = "https://reqres.in/api/users/" + id;
+        var response =
+                given().
+                when().
+                        get(endpoint).
+            then().
+                        assertThat().
+                                statusCode(404);
+        log.info("Finish getting single user not found");
+    }
+
+    @Test
+    public void getListResource(){
+        log.info("Get list resource");
+        String endpoint = "https://reqres.in/api/unknown";
+        var response =
+                given().
+                when().
+                        get(endpoint).
+                then().
+                        assertThat().
+                                statusCode(200).
+                                body("data.size()", greaterThan(0)).
+                                body("data.id", everyItem(notNullValue())).
+                                body("data.name", everyItem(notNullValue())).
+                                body("data.year", everyItem(notNullValue())).
+                                body("data.color", everyItem(notNullValue())).
+                                body("data.pantone_value", everyItem(notNullValue()));
+        log.info("Finish getting list resource");
+    }
+
+    @Test
+    public void getSingleResource() {
+        int id = 2;
+        log.info("Get single resource has ID: " + id);
+        String endpoint = "https://reqres.in/api/unknown/" + id;
+        var response =
+                given().
+                when().
+                        get(endpoint).
+                then().
+                        assertThat().
+                        statusCode(200).
+                        body("data.id", notNullValue()).
+                        body("data.name", notNullValue()).
+                        body("data.year", notNullValue()).
+                        body("data.color", notNullValue()).
+                        body("data.pantone_value", notNullValue());
+        log.info("Finish getting single resource has ID: " + id);
+    }
+
+    @Test
+    public void getSingleResourceNotFound() {
+        log.info("Get single resource not found");
+        int id = 23;
+        String endpoint = "https://reqres.in/api/unknown/" + id;
+        var response =
+                given().
+                when().
+                        get(endpoint).
+                then().
+                        assertThat().
+                        statusCode(404);
+        log.info("Finish getting single resource not found");
     }
 
     @Test
@@ -107,6 +171,30 @@ public class ApiTests extends RestAssuredBaseTest {
     }
 
     @Test
+    public void patchUpdateInformation(){
+        log.info("Patch update information");
+        String endpoint = "https://reqres.in/api/users/2";
+        String body = """
+                {
+               "name": "Duyen",
+               "job": "student"
+                }
+                """;
+        var response =
+                given().
+                        contentType("application/json").
+                        body(body).
+                when().
+                        patch(endpoint).
+                then().
+
+                        log().body().
+                        assertThat().
+                                statusCode(200);
+        log.info("Finish patching update information");
+    }
+
+    @Test
     public void removeUser() {
         int id = 2;
         log.info("Remove user has ID: " + id);
@@ -123,6 +211,109 @@ public class ApiTests extends RestAssuredBaseTest {
                                 statusCode(204);
         response.log().body();
         log.info("Finish removing user has ID: " + id);
+    }
+
+    @Test
+    public void createRegister() {
+        log.info("Create register");
+        String endpoint = "https://reqres.in/api/register";
+        User user = new User(
+                "eve.holt@reqres.in",
+                "pistol"
+        );
+        var response =
+                given().
+                        header("Content-Type","application/json").
+                        body(user).
+                when().
+                        post(endpoint).
+                then().
+                        log().body().
+                        assertThat().
+                                statusCode(200);
+        log.info("Finish creating register");
+
+    }
+
+    @Test
+    public void createUnsuccessfulRegister() {
+        log.info("Create unsuccessful register");
+        String endpoint = "https://reqres.in/api/register";
+        String body = """
+                {
+                "email": "sydney@fife" 
+                }
+                """;
+        var response =
+                given().
+                        header("Content-Type","application/json").
+                        body(body).
+                when().
+                        post(endpoint).
+                then().
+                        log().body().
+                        assertThat().
+                                statusCode(400);
+        log.info("Finish creating unsuccessful register");
+    }
+
+    @Test
+    public void createLogin() {
+        log.info("Create login");
+        String endpoint = "https://reqres.in/api/login";
+        User user = new User(
+                "eve.holt@reqres.in",
+                "cityslicka"
+        );
+        var response =
+                given().
+                        header("Content-Type","application/json").
+                        body(user).
+                when().
+                        post(endpoint).
+                then().
+                        log().body().
+                        assertThat().
+                                statusCode(200).
+                                body("token", equalTo("QpwL5tke4Pnpja7X4"));
+        log.info("Finish creating login");
+    }
+
+    @Test
+    public void createUnsuccessfulLogin() {
+        log.info("Create unsuccessful login");
+        String endpoint = "https://reqres.in/api/login";
+        String body = """
+                {
+                "email": "peter@klaven" 
+                }
+                """;
+        var response =
+                given().
+                        header("Content-Type","application/json").
+                        body(body).
+                when().
+                        post(endpoint).
+                then().
+                        log().body().
+                        assertThat().
+                                statusCode(400).
+                                body("error", equalTo("Missing password"));
+        log.info("Finish creating unsuccessful login");
+    }
+
+    @Test
+    public void getDelayResponse() {
+        log.info("Get delay response");
+        String endpoint = "https://reqres.in/api/users?delay=3";
+        var response =
+                given().
+                when().
+                        get(endpoint).
+                then().
+                        assertThat().
+                        statusCode(200);
+        log.info("Finish getting delay response ");
     }
 
     @Test
@@ -146,7 +337,6 @@ public class ApiTests extends RestAssuredBaseTest {
                                 statusCode(201);
         response.log().body();
         log.info("Finish creating serialized user");
-
     }
 
 

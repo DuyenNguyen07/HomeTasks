@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "testng.org">
+<suite name="Reqres-Test-Suite">
+    <test name="Reqres-API-Test">
+        <classes>
+            <class name="com.DuyenNguyen.experimenting.reqres.ApiTests"></class>
+        </classes>
+    </test>
+</suite>
