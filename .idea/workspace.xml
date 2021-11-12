@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7400c362-f11e-481a-ac6b-c6bd6749a41d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/reqres/ApiTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/reqres/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logback-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/logback-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/pages/BookingHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/pages/BookingHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/testCases/ParisBookingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/testCases/ParisBookingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/google/pages/GoogleHomeSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/google/pages/GoogleHomeSearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/INFO_log-byDay_IS_UNDEFINED.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/INFO_log-byDay_IS_UNDEFINED.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/testCases/BookingSeleniumBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/testCases/BookingSeleniumBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/calculator/testCases/CalculatorSeleniumBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/calculator/testCases/CalculatorSeleniumBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/calculator/testCases/LoveCalculatorSeleniumBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/calculator/testCases/LoveCalculatorSeleniumBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/selenium4/SeleniumBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/selenium4/SeleniumBaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +63,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="201br33IW29G7i6O4WD4glmbz4L" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -76,13 +91,55 @@
       <recent name="com.DuyenNguyen.experimenting.selenium4" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.booking.testParisBooking">
-    <configuration name="Selenium4Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="TestNG.reqres.getSingleUser">
+    <configuration name="ApiTests.getListUsers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.DuyenNguyen.experimenting.selenium4.Selenium4Test&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.DuyenNguyen.experimenting.reqres.ApiTests.getListUsers&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ApiTests.getSingleUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.DuyenNguyen.experimenting.reqres.ApiTests.getSingleUser&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ParisBookingTest.testParisBooking" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.DuyenNguyen.experimenting.booking.testCases.ParisBookingTest.testParisBooking&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -104,27 +161,6 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;com.DuyenNguyen.experimenting.selenium4.TestCalculator_com&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TestCalculator_com.openNewTab" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.DuyenNguyen.experimenting.selenium4.TestCalculator_com.openNewTab&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -224,6 +260,144 @@
       <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.booking.testCases" />
       <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.booking.testCases.ParisBookingTest" />
       <option name="METHOD_NAME" value="testParisBooking" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reqres.createSerializedUser" type="TestNG">
+      <module name="NewE3.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="createSerializedUser" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reqres.createUser" type="TestNG">
+      <module name="NewE3.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="createUser" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reqres.getListUsers" type="TestNG">
+      <module name="NewE3.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="getListUsers" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reqres.getSingleUser" type="TestNG">
+      <module name="NewE3.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="getSingleUser" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reqres.removeUser" type="TestNG">
+      <module name="NewE3.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="removeUser" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reqres.updateUser" type="TestNG">
+      <module name="NewE3.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="updateUser" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
@@ -350,9 +524,16 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.Selenium4Test" />
-      <item itemvalue="Gradle.TestCalculator_com.openNewTab" />
       <item itemvalue="Gradle.TestCalculator_com" />
+      <item itemvalue="Gradle.ParisBookingTest.testParisBooking" />
+      <item itemvalue="Gradle.ApiTests.getListUsers" />
+      <item itemvalue="Gradle.ApiTests.getSingleUser" />
+      <item itemvalue="TestNG.reqres.getListUsers" />
+      <item itemvalue="TestNG.reqres.updateUser" />
+      <item itemvalue="TestNG.reqres.removeUser" />
+      <item itemvalue="TestNG.reqres.getSingleUser" />
+      <item itemvalue="TestNG.reqres.createSerializedUser" />
+      <item itemvalue="TestNG.reqres.createUser" />
       <item itemvalue="TestNG.selenium4.openNewTab" />
       <item itemvalue="TestNG.booking.testParisBooking" />
       <item itemvalue="TestNG.GoogleHomeSearchPage.testGoogleSearch" />
@@ -366,10 +547,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ApiTests.getListUsers" />
+        <item itemvalue="Gradle.ApiTests.getSingleUser" />
+        <item itemvalue="Gradle.ParisBookingTest.testParisBooking" />
         <item itemvalue="TestNG.C:/Users/Duyen_Nguyen/Desktop/NewE3/src/test/UITestSuite.xml" />
         <item itemvalue="Gradle.TestCalculator_com" />
-        <item itemvalue="Gradle.TestCalculator_com.openNewTab" />
-        <item itemvalue="Gradle.Selenium4Test" />
       </list>
     </recent_temporary>
   </component>

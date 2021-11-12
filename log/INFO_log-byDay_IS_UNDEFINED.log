@@ -6,3 +6,81 @@
 14:25:26.151 INFO  c.DuyenNguyen.experimenting.BaseTest - Set check out date: 15 February 2022
 14:25:26.216 INFO  c.DuyenNguyen.experimenting.BaseTest - Set person number: 2
 14:25:26.300 INFO  c.DuyenNguyen.experimenting.BaseTest - Click search button
+15:25:18.539 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+15:43:22.503 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+15:49:41.850 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user
+15:50:02.530 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user
+15:50:48.288 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user
+15:53:04.310 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user
+15:56:58.926 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user
+16:11:57.480 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 213
+16:11:59.076 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 213
+16:14:40.532 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+16:14:41.754 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+16:37:58.486 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+16:37:59.879 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+16:38:33.374 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+16:38:34.545 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+16:38:54.479 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+16:38:56.483 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+10:47:15.713 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+10:47:17.037 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 2
+10:51:32.079 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 5
+10:51:33.321 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 5
+15:08:15.589 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 916
+15:08:17.255 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 916
+15:11:33.794 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 916
+15:11:35.430 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 916
+15:12:18.264 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 916
+15:12:19.601 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 916
+15:15:31.708 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 916
+15:15:33.347 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 916
+16:16:13.928 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+16:16:15.516 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+16:25:15.487 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+16:25:33.975 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+16:25:54.461 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+16:26:30.302 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+16:26:31.526 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 2
+16:28:36.179 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+16:28:37.387 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+16:31:59.590 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+16:32:01.497 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+16:34:05.030 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+16:34:07.060 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+16:47:41.821 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+17:46:47.863 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+17:46:49.102 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 2
+09:50:41.615 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+09:50:43.332 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 2
+09:51:23.492 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+09:57:00.081 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+09:57:01.931 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+09:58:12.532 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+09:58:15.598 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+10:29:09.236 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+10:29:11.062 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+11:45:58.630 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+11:46:00.598 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+11:46:21.421 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+11:46:23.201 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+11:51:58.733 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+11:56:38.840 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+11:57:30.230 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+11:58:13.924 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+14:30:32.004 INFO  c.DuyenNguyen.experimenting.BaseTest - Create an user with name and job
+14:30:33.711 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating a user with name and job
+14:30:36.695 INFO  c.DuyenNguyen.experimenting.BaseTest - Remove user has ID: 2
+14:30:38.356 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish removing user has ID: 2
+14:34:47.799 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+14:36:55.880 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+14:38:31.388 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+14:38:57.518 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+14:39:44.813 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+14:39:45.888 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 2
+14:40:05.514 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+14:40:06.706 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 2
+14:43:45.330 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+14:44:43.222 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+14:46:10.446 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+14:47:31.713 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
