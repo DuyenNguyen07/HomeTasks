@@ -1,116 +1,122 @@
-14:25:22.764 INFO  c.DuyenNguyen.experimenting.BaseTest - Test booking to Paris from 13 February 2022 to 15 February 2022 for 2
-14:25:22.767 INFO  c.DuyenNguyen.experimenting.BaseTest - Choose english language for the site
-14:25:24.683 INFO  c.DuyenNguyen.experimenting.BaseTest - Set destination is Paris
-14:25:24.862 INFO  c.DuyenNguyen.experimenting.BaseTest - Choose arrival dates from 13 February 2022to 15 February 2022
-14:25:26.092 INFO  c.DuyenNguyen.experimenting.BaseTest - Set check in date: 13 February 2022
-14:25:26.151 INFO  c.DuyenNguyen.experimenting.BaseTest - Set check out date: 15 February 2022
-14:25:26.216 INFO  c.DuyenNguyen.experimenting.BaseTest - Set person number: 2
-14:25:26.300 INFO  c.DuyenNguyen.experimenting.BaseTest - Click search button
-15:25:18.539 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
-15:43:22.503 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
-15:49:41.850 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user
-15:50:02.530 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user
-15:50:48.288 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user
-15:53:04.310 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user
-15:56:58.926 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user
-16:11:57.480 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 213
-16:11:59.076 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 213
-16:14:40.532 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
-16:14:41.754 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
-16:37:58.486 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
-16:37:59.879 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
-16:38:33.374 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
-16:38:34.545 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
-16:38:54.479 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
-16:38:56.483 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
-10:47:15.713 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-10:47:17.037 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 2
-10:51:32.079 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 5
-10:51:33.321 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 5
-15:08:15.589 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 916
-15:08:17.255 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 916
-15:11:33.794 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 916
-15:11:35.430 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 916
-15:12:18.264 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 916
-15:12:19.601 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 916
-15:15:31.708 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 916
-15:15:33.347 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 916
-16:16:13.928 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
-16:16:15.516 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
-16:25:15.487 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-16:25:33.975 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-16:25:54.461 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-16:26:30.302 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-16:26:31.526 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 2
-16:28:36.179 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
-16:28:37.387 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
-16:31:59.590 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
-16:32:01.497 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
-16:34:05.030 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
-16:34:07.060 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
-16:47:41.821 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-17:46:47.863 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-17:46:49.102 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 2
-09:50:41.615 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-09:50:43.332 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 2
-09:51:23.492 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-09:57:00.081 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
-09:57:01.931 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
-09:58:12.532 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
-09:58:15.598 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
-10:29:09.236 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
-10:29:11.062 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
-11:45:58.630 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
-11:46:00.598 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
-11:46:21.421 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
-11:46:23.201 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
-11:51:58.733 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-11:56:38.840 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-11:57:30.230 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-11:58:13.924 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-14:30:32.004 INFO  c.DuyenNguyen.experimenting.BaseTest - Create an user with name and job
-14:30:33.711 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating a user with name and job
-14:30:36.695 INFO  c.DuyenNguyen.experimenting.BaseTest - Remove user has ID: 2
-14:30:38.356 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish removing user has ID: 2
-14:34:47.799 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-14:36:55.880 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-14:38:31.388 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-14:38:57.518 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-14:39:44.813 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-14:39:45.888 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 2
-14:40:05.514 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-14:40:06.706 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 2
-14:43:45.330 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-14:44:43.222 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-14:46:10.446 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-14:47:31.713 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-15:04:48.416 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user not found
-15:04:59.500 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user not found
-15:16:06.790 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-15:16:30.494 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-15:17:47.088 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
-15:17:48.532 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 2
-15:19:28.590 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single resource has ID: 2
-15:23:38.724 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single resource has ID: 2
-15:23:40.879 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting single resource has ID: 2
-15:29:56.644 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single resource not found
-15:29:57.849 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting single resource not found
-15:30:41.554 INFO  c.DuyenNguyen.experimenting.BaseTest - Patch update information
-15:30:43.053 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish patching update information
-15:31:32.460 INFO  c.DuyenNguyen.experimenting.BaseTest - Patch update information
-15:31:34.345 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish patching update information
-15:36:13.693 INFO  c.DuyenNguyen.experimenting.BaseTest - Create register
-15:37:00.318 INFO  c.DuyenNguyen.experimenting.BaseTest - Create register
-15:37:48.735 INFO  c.DuyenNguyen.experimenting.BaseTest - Create register
-15:38:41.586 INFO  c.DuyenNguyen.experimenting.BaseTest - Create register
-15:38:43.213 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating register
-15:41:49.141 INFO  c.DuyenNguyen.experimenting.BaseTest - Create unsuccessful register
-15:42:03.296 INFO  c.DuyenNguyen.experimenting.BaseTest - Create unsuccessful register
-15:42:04.852 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating unsuccessful register
-15:47:10.101 INFO  c.DuyenNguyen.experimenting.BaseTest - Create login
-15:47:40.140 INFO  c.DuyenNguyen.experimenting.BaseTest - Create login
-15:47:42.100 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating login
-15:50:01.889 INFO  c.DuyenNguyen.experimenting.BaseTest - Create unsuccessful login
-15:50:03.743 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating unsuccessful login
-15:54:01.662 INFO  c.DuyenNguyen.experimenting.BaseTest - Get delay response
-15:54:06.324 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting delay response 
+17:33:23.825 INFO  c.DuyenNguyen.experimenting.BaseTest - Test booking to Paris from 13 February 2022 to 15 February 2022 for 2 adult(s)
+17:33:23.831 INFO  c.DuyenNguyen.experimenting.BaseTest - Choose english language for the site
+17:33:26.474 INFO  c.DuyenNguyen.experimenting.BaseTest - Set destination is Paris
+17:33:26.712 INFO  c.DuyenNguyen.experimenting.BaseTest - Choose arrival dates from 13 February 2022to 15 February 2022
+17:33:28.092 INFO  c.DuyenNguyen.experimenting.BaseTest - Set check in date: 13 February 2022
+17:33:28.163 INFO  c.DuyenNguyen.experimenting.BaseTest - Set check out date: 15 February 2022
+17:33:28.239 INFO  c.DuyenNguyen.experimenting.BaseTest - Set person number: 2
+17:33:28.356 INFO  c.DuyenNguyen.experimenting.BaseTest - Click search button
+17:33:31.841 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish testing
+09:27:28.620 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+09:27:31.015 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+09:38:51.227 INFO  c.DuyenNguyen.experimenting.BaseTest - Create login
+09:38:53.479 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating login
+09:38:53.480 INFO  c.DuyenNguyen.experimenting.BaseTest - Create register
+09:38:54.368 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating register
+09:38:54.369 INFO  c.DuyenNguyen.experimenting.BaseTest - Create serialized user
+09:38:54.981 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating serialized user
+09:38:54.981 INFO  c.DuyenNguyen.experimenting.BaseTest - Create unsuccessful login
+09:38:55.504 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating unsuccessful login
+09:38:55.504 INFO  c.DuyenNguyen.experimenting.BaseTest - Create unsuccessful register
+09:38:56.110 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating unsuccessful register
+09:38:56.111 INFO  c.DuyenNguyen.experimenting.BaseTest - Create an user with name and job
+09:38:56.725 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating a user with name and job
+09:38:56.726 INFO  c.DuyenNguyen.experimenting.BaseTest - Get delay response
+09:39:00.515 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting delay response 
+09:39:00.516 INFO  c.DuyenNguyen.experimenting.BaseTest - Get list resource
+09:39:01.197 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list resource
+09:39:01.198 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+09:39:01.392 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+09:39:01.394 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single resource has ID: 2
+09:39:01.976 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting single resource has ID: 2
+09:39:01.977 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single resource not found
+09:39:02.558 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting single resource not found
+09:39:02.559 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+09:39:03.205 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 2
+09:39:03.206 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user not found
+09:39:03.787 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting single user not found
+09:39:03.789 INFO  c.DuyenNguyen.experimenting.BaseTest - Patch update information
+09:39:04.404 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish patching update information
+09:39:04.405 INFO  c.DuyenNguyen.experimenting.BaseTest - Remove user has ID: 2
+09:39:05.015 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish removing user has ID: 2
+09:39:05.015 INFO  c.DuyenNguyen.experimenting.BaseTest - Update user's information
+09:39:05.553 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish updating user's information
+10:05:35.475 INFO  c.DuyenNguyen.experimenting.BaseTest - Test booking to Paris from 13 February 2022 to 15 February 2022 for 2 adult(s)
+10:05:35.479 INFO  c.DuyenNguyen.experimenting.BaseTest - Choose english language for the site
+10:05:37.669 INFO  c.DuyenNguyen.experimenting.BaseTest - Set destination is Paris
+10:05:37.933 INFO  c.DuyenNguyen.experimenting.BaseTest - Choose arrival dates from 13 February 2022to 15 February 2022
+10:05:39.256 INFO  c.DuyenNguyen.experimenting.BaseTest - Set check in date: 13 February 2022
+10:05:39.328 INFO  c.DuyenNguyen.experimenting.BaseTest - Set check out date: 15 February 2022
+10:05:39.398 INFO  c.DuyenNguyen.experimenting.BaseTest - Set person number: 2
+10:05:39.535 INFO  c.DuyenNguyen.experimenting.BaseTest - Click search button
+10:05:42.676 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish testing
+10:10:40.162 INFO  c.DuyenNguyen.experimenting.BaseTest - Test booking to Paris from 13 February 2022 to 15 February 2022 for 2 adult(s)
+10:10:40.169 INFO  c.DuyenNguyen.experimenting.BaseTest - Choose english language for the site
+10:10:42.232 INFO  c.DuyenNguyen.experimenting.BaseTest - Set destination is Paris
+10:10:42.450 INFO  c.DuyenNguyen.experimenting.BaseTest - Choose arrival dates from 13 February 2022to 15 February 2022
+10:10:43.786 INFO  c.DuyenNguyen.experimenting.BaseTest - Set check in date: 13 February 2022
+10:10:43.854 INFO  c.DuyenNguyen.experimenting.BaseTest - Set check out date: 15 February 2022
+10:10:43.926 INFO  c.DuyenNguyen.experimenting.BaseTest - Set person number: 2
+10:10:44.028 INFO  c.DuyenNguyen.experimenting.BaseTest - Click search button
+10:10:46.728 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish testing
+11:28:45.668 INFO  c.DuyenNguyen.experimenting.BaseTest - Create login
+11:28:47.857 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating login
+11:28:47.859 INFO  c.DuyenNguyen.experimenting.BaseTest - Create register
+11:28:48.455 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating register
+11:28:48.457 INFO  c.DuyenNguyen.experimenting.BaseTest - Create serialized user
+11:28:49.018 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating serialized user
+11:28:49.019 INFO  c.DuyenNguyen.experimenting.BaseTest - Create unsuccessful login
+11:28:49.583 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating unsuccessful login
+11:28:49.584 INFO  c.DuyenNguyen.experimenting.BaseTest - Create unsuccessful register
+11:28:54.388 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating unsuccessful register
+11:28:54.389 INFO  c.DuyenNguyen.experimenting.BaseTest - Create an user with name and job
+11:28:54.942 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating a user with name and job
+11:28:54.943 INFO  c.DuyenNguyen.experimenting.BaseTest - Get delay response
+11:28:58.593 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting delay response 
+11:28:58.593 INFO  c.DuyenNguyen.experimenting.BaseTest - Get list resource
+11:28:59.337 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list resource
+11:28:59.337 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+11:28:59.957 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+11:28:59.959 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single resource has ID: 2
+11:29:00.517 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting single resource has ID: 2
+11:29:00.518 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single resource not found has ID: 23
+11:29:01.162 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+11:29:01.984 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user not found has ID: 23
+11:29:02.583 INFO  c.DuyenNguyen.experimenting.BaseTest - Patch update information
+11:29:03.193 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish patching update information
+11:29:03.193 INFO  c.DuyenNguyen.experimenting.BaseTest - Remove user has ID: 2
+11:29:03.747 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish removing user has ID: 2
+11:29:03.748 INFO  c.DuyenNguyen.experimenting.BaseTest - Update user's information
+11:29:04.326 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish updating user's information
+11:32:26.564 INFO  c.DuyenNguyen.experimenting.BaseTest - Create login
+11:32:28.734 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating login
+11:32:28.736 INFO  c.DuyenNguyen.experimenting.BaseTest - Create register
+11:32:29.329 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating register
+11:32:29.330 INFO  c.DuyenNguyen.experimenting.BaseTest - Create serialized user
+11:32:29.946 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating serialized user
+11:32:29.947 INFO  c.DuyenNguyen.experimenting.BaseTest - Create unsuccessful login
+11:32:30.532 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating unsuccessful login
+11:32:30.532 INFO  c.DuyenNguyen.experimenting.BaseTest - Create unsuccessful register
+11:32:31.171 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating unsuccessful register
+11:32:31.171 INFO  c.DuyenNguyen.experimenting.BaseTest - Create an user with name and job
+11:32:31.793 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish creating a user with name and job
+11:32:31.793 INFO  c.DuyenNguyen.experimenting.BaseTest - Get delay response
+11:32:35.475 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting delay response 
+11:32:35.475 INFO  c.DuyenNguyen.experimenting.BaseTest - Get list resource
+11:32:35.677 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list resource
+11:32:35.677 INFO  c.DuyenNguyen.experimenting.BaseTest -  Get list users
+11:32:36.438 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting list users
+11:32:36.439 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single resource has ID: 2
+11:32:37.042 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting single resource has ID: 2
+11:32:37.042 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single resource not found has ID: 23
+11:32:37.623 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting single resource not found has ID: 23
+11:32:37.625 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user has ID: 2
+11:32:37.789 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish get single user has ID: 2
+11:32:37.789 INFO  c.DuyenNguyen.experimenting.BaseTest - Get single user not found has ID: 23
+11:32:38.325 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish getting single user not found has ID: 23
+11:32:38.325 INFO  c.DuyenNguyen.experimenting.BaseTest - Patch update information
+11:32:39.159 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish patching update information
+11:32:39.160 INFO  c.DuyenNguyen.experimenting.BaseTest - Remove user has ID: 2
+11:32:39.771 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish removing user has ID: 2
+11:32:39.772 INFO  c.DuyenNguyen.experimenting.BaseTest - Update user's information
+11:32:40.388 INFO  c.DuyenNguyen.experimenting.BaseTest - Finish updating user's information

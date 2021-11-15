@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7400c362-f11e-481a-ac6b-c6bd6749a41d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/reqres/reqresApiTestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/INFO_log-byDay_IS_UNDEFINED.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/INFO_log-byDay_IS_UNDEFINED.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/INFO_log-byDay_IS_UNDEFINED.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/pages/BookingHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/pages/BookingHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/pages/ParisPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/pages/ParisPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/testCases/ParisBookingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/booking/testCases/ParisBookingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/reqres/ApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/reqres/ApiTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/reqres/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/reqres/models/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +76,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/reqres/reqresApiTestSuite.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -83,7 +87,7 @@
       <recent name="com.DuyenNguyen.experimenting.selenium4" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Duyen_Nguyen/Desktop/HomeTask/src/test/java/com/DuyenNguyen/experimenting/reqres/reqresApiTestSuite.xml">
+  <component name="RunManager" selected="TestNG.reqresApiTestSuite">
     <configuration name="ApiTests.getListUsers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -241,6 +245,49 @@
       <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.booking.testCases" />
       <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.booking.testCases.ParisBookingTest" />
       <option name="METHOD_NAME" value="testParisBooking" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reqresApiTestSuite" type="TestNG">
+      <module name="HomeTasks.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/com/DuyenNguyen/experimenting/reqres/reqresApiTestSuite.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reqres.createDeserializedUser" type="TestNG">
+      <module name="HomeTasks.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.DuyenNguyen.experimenting.reqres" />
+      <option name="MAIN_CLASS_NAME" value="com.DuyenNguyen.experimenting.reqres.ApiTests" />
+      <option name="METHOD_NAME" value="createDeserializedUser" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=logback-test.xml" />
@@ -738,6 +785,7 @@
       <item itemvalue="Gradle.ApiTests.getListUsers" />
       <item itemvalue="Gradle.ApiTests.getSingleUser" />
       <item itemvalue="TestNG.reqres.getListUsers" />
+      <item itemvalue="TestNG.reqresApiTestSuite" />
       <item itemvalue="TestNG.reqres.updateUser" />
       <item itemvalue="TestNG.reqres.removeUser" />
       <item itemvalue="TestNG.reqres.getSingleUser" />
@@ -762,6 +810,7 @@
       <item itemvalue="TestNG.selenium4.testCalculator_com" />
       <item itemvalue="TestNG.selenium4.testingChromeAndSeleniumBasic" />
       <item itemvalue="TestNG.selenium4.switchTab" />
+      <item itemvalue="TestNG.reqres.createDeserializedUser" />
       <item itemvalue="TestNG.C:/Users/Duyen_Nguyen/Desktop/NewE3/src/test/UITestSuite.xml" />
       <item itemvalue="TestNG.C:/Users/Duyen_Nguyen/Desktop/HomeTask/src/test/java/com/DuyenNguyen/experimenting/reqres/reqresApiTestSuite.xml" />
     </list>

@@ -8,8 +8,8 @@ public class ParisPage extends CommonPage {
     By destinationPropertyNameTextBox = By.xpath("//input[@id='ss']");
 
     public String getDestinationPropertyName() {
-        WebElement destinationPropertyNameElement = search_element_by_By(destinationPropertyNameTextBox);
-        String destinationPropertyName = destinationPropertyNameElement.getAttribute("value");
+        String destinationPropertyName = search_element_by_By(destinationPropertyNameTextBox)
+                .getAttribute("value");
         return destinationPropertyName;
     }
 }

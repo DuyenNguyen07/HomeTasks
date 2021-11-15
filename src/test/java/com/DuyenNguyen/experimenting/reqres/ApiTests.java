@@ -2,7 +2,6 @@ package com.DuyenNguyen.experimenting.reqres;
 
 import com.DuyenNguyen.experimenting.reqres.models.User;
 import com.DuyenNguyen.experimenting.restAssured44.RestAssuredBaseTest;
-import com.sun.xml.bind.v2.TODO;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
@@ -10,15 +9,55 @@ import static org.hamcrest.Matchers.*;
 
 
 public class ApiTests extends RestAssuredBaseTest {
+    // Users
+    private String endpointUser = "https://reqres.in/api/users";
+
+    private String wholeListUsers = "?per_page=12";
+    private String endpointWholeListUsers = endpointUser + wholeListUsers;
+
+    private int listUserPageNumber = 2;
+    private String listUsersPage = "?page=";
+    private String endpointListUsersPage = endpointUser+ listUsersPage + listUserPageNumber;
+
+    private int singleUserID = 2;
+    private String endpointSingleUser = endpointUser + "/" + singleUserID;
+
+    private int singleUserIDNotFound = 23;
+    private String endpointSingleUserNotFound = endpointUser +  "/" + singleUserIDNotFound;
+
+    private int updateUserID = 2;
+    private String endpointUpdateUser = endpointUser +  "/" + updateUserID;
+
+    private int patchUpdateUserID = 2;
+    private String endpointPatchUpdateInfo = endpointUser +  "/" + patchUpdateUserID;
+
+    private int deleteUserID = 2;
+    private String endpointDeleteUser = endpointUser +  "/" + deleteUserID;
+
+    private String endpointDelayedResponse = endpointUser + "?delay=3";
+
+    // Resource
+    private String endpointListResource = "https://reqres.in/api/unknown";
+
+    private int singleResourceID = 2;
+    private String endpointSingleResource = endpointListResource +  "/" + singleResourceID;
+
+    private int singleResourceIDNotFound = 23;
+    private String endpointSingleResourceNotFound = endpointListResource +  "/" + singleResourceIDNotFound;
+
+    // Register
+    private String endpointRegister = "https://reqres.in/api/register";
+
+    // Log in
+    private String endpointLogin = "https://reqres.in/api/login";
 
     @Test
     public void getListUsers() {
         log.info(" Get list users");
-        String endpoint = "https://reqres.in/api/users?per_page=12"; // whole list
         var response =
                 given().
                 when().
-                        get(endpoint).
+                        get(endpointWholeListUsers).
                 then().
                         log().
                                 body().
@@ -29,57 +68,52 @@ public class ApiTests extends RestAssuredBaseTest {
                                                 body("data.first_name", everyItem(notNullValue())).
                                                 body("data.last_name", everyItem(notNullValue())).
                                                 body("data.avatar", everyItem(notNullValue()));
-        response.log().body();
         log.info("Finish getting list users");
     }
 
     @Test
         public void getSingleUser() {
-        int id = 2;
-        log.info("Get single user has ID: " + id);
-        String endpoint = "https://reqres.in/api/users/" + id;
+        log.info("Get single user has ID: " + singleUserID);
         var response =
                 given().
                 when().
-                        get(endpoint).
+                        get(endpointSingleUser).
                 then().
                         log().
                                 body().
                                         assertThat().
                                                 statusCode(200).
                                                 header("Content-Type", "application/json; charset=utf-8").
-                                                body("data.id", equalTo(2)).
+                                                body("data.id", equalTo(singleUserID)).
                                                 body("data.email", equalTo("janet.weaver@reqres.in")).
                                                 body("data.first_name", equalTo("Janet")).
                                                 body("data.last_name", equalTo("Weaver")).
                                                 body("data.avatar", equalTo("https://reqres.in/img/faces/2-image.jpg"));
         response.log().body();
-        log.info("Finish get single user has ID: " + id);
+        log.info("Finish get single user has ID: " + singleUserID);
     }
 
     @Test
     public void getSingleUserNotFound() {
-        log.info("Get single user not found");
-        int id = 23;
-        String endpoint = "https://reqres.in/api/users/" + id;
+        log.info("Get single user not found has ID: " + singleUserIDNotFound);
         var response =
                 given().
                 when().
-                        get(endpoint).
+                        get(endpointSingleUserNotFound).
             then().
                         assertThat().
                                 statusCode(404);
-        log.info("Finish getting single user not found");
+        log.info("Finish getting single user not found has ID: " + singleUserIDNotFound);
     }
 
     @Test
     public void getListResource(){
         log.info("Get list resource");
-        String endpoint = "https://reqres.in/api/unknown";
+
         var response =
                 given().
                 when().
-                        get(endpoint).
+                        get(endpointListResource).
                 then().
                         assertThat().
                                 statusCode(200).
@@ -94,13 +128,11 @@ public class ApiTests extends RestAssuredBaseTest {
 
     @Test
     public void getSingleResource() {
-        int id = 2;
-        log.info("Get single resource has ID: " + id);
-        String endpoint = "https://reqres.in/api/unknown/" + id;
+        log.info("Get single resource has ID: " + singleResourceID);
         var response =
                 given().
                 when().
-                        get(endpoint).
+                        get(endpointSingleResource).
                 then().
                         assertThat().
                         statusCode(200).
@@ -109,28 +141,25 @@ public class ApiTests extends RestAssuredBaseTest {
                         body("data.year", notNullValue()).
                         body("data.color", notNullValue()).
                         body("data.pantone_value", notNullValue());
-        log.info("Finish getting single resource has ID: " + id);
+        log.info("Finish getting single resource has ID: " + singleResourceID);
     }
 
     @Test
     public void getSingleResourceNotFound() {
-        log.info("Get single resource not found");
-        int id = 23;
-        String endpoint = "https://reqres.in/api/unknown/" + id;
+        log.info("Get single resource not found has ID: " + singleResourceIDNotFound);
         var response =
                 given().
                 when().
-                        get(endpoint).
+                        get(endpointSingleResourceNotFound).
                 then().
                         assertThat().
                         statusCode(404);
-        log.info("Finish getting single resource not found");
+        log.info("Finish getting single resource not found has ID: " + singleResourceIDNotFound);
     }
 
     @Test
     public void createUser() {
         log.info("Create an user with name and job");
-        String endpoint = "https://reqres.in/api/users";
         //User user = new User("Duyen", "student");
         String body = """
                 {
@@ -143,7 +172,7 @@ public class ApiTests extends RestAssuredBaseTest {
                         header("Content-Type", "application/json").
                         body(body).
                 when().
-                        post(endpoint).
+                        post(endpointUser).
 
                 then().
                         assertThat().
@@ -155,13 +184,12 @@ public class ApiTests extends RestAssuredBaseTest {
     @Test
     public void updateUser(){
         log.info("Update user's information");
-        String endpoint = "https://reqres.in/api/users/";
         User user = new User(2, "other_janet.weaver@reqres.in", "Janet", "Weaver", "https://reqres.in/img/faces/2-image.jpg");
         var response =
                 given().
                         body(user).
                 when().
-                        put(endpoint).
+                        put(endpointUpdateUser).
                 then().
                         log().body().
                                 assertThat().
@@ -173,7 +201,6 @@ public class ApiTests extends RestAssuredBaseTest {
     @Test
     public void patchUpdateInformation(){
         log.info("Patch update information");
-        String endpoint = "https://reqres.in/api/users/2";
         String body = """
                 {
                "name": "Duyen",
@@ -185,7 +212,7 @@ public class ApiTests extends RestAssuredBaseTest {
                         contentType("application/json").
                         body(body).
                 when().
-                        patch(endpoint).
+                        patch(endpointPatchUpdateInfo).
                 then().
 
                         log().body().
@@ -196,27 +223,24 @@ public class ApiTests extends RestAssuredBaseTest {
 
     @Test
     public void removeUser() {
-        int id = 2;
-        log.info("Remove user has ID: " + id);
-        String endpoint = "https://reqres.in/api/users/" + id;
-        User user = new User(id);
+        log.info("Remove user has ID: " + deleteUserID);
+        User user = new User(deleteUserID);
         var response =
                 given().
                         header("Content-Type","application/json").
                         body(user).
                 when().
-                        delete(endpoint).
+                        delete(endpointDeleteUser).
                 then().
                         assertThat().
                                 statusCode(204);
         response.log().body();
-        log.info("Finish removing user has ID: " + id);
+        log.info("Finish removing user has ID: " + deleteUserID);
     }
 
     @Test
     public void createRegister() {
         log.info("Create register");
-        String endpoint = "https://reqres.in/api/register";
         User user = new User(
                 "eve.holt@reqres.in",
                 "pistol"
@@ -226,7 +250,7 @@ public class ApiTests extends RestAssuredBaseTest {
                         header("Content-Type","application/json").
                         body(user).
                 when().
-                        post(endpoint).
+                        post(endpointRegister).
                 then().
                         log().body().
                         assertThat().
@@ -238,7 +262,6 @@ public class ApiTests extends RestAssuredBaseTest {
     @Test
     public void createUnsuccessfulRegister() {
         log.info("Create unsuccessful register");
-        String endpoint = "https://reqres.in/api/register";
         String body = """
                 {
                 "email": "sydney@fife" 
@@ -249,7 +272,7 @@ public class ApiTests extends RestAssuredBaseTest {
                         header("Content-Type","application/json").
                         body(body).
                 when().
-                        post(endpoint).
+                        post(endpointRegister).
                 then().
                         log().body().
                         assertThat().
@@ -260,7 +283,6 @@ public class ApiTests extends RestAssuredBaseTest {
     @Test
     public void createLogin() {
         log.info("Create login");
-        String endpoint = "https://reqres.in/api/login";
         User user = new User(
                 "eve.holt@reqres.in",
                 "cityslicka"
@@ -270,7 +292,7 @@ public class ApiTests extends RestAssuredBaseTest {
                         header("Content-Type","application/json").
                         body(user).
                 when().
-                        post(endpoint).
+                        post(endpointLogin).
                 then().
                         log().body().
                         assertThat().
@@ -282,7 +304,6 @@ public class ApiTests extends RestAssuredBaseTest {
     @Test
     public void createUnsuccessfulLogin() {
         log.info("Create unsuccessful login");
-        String endpoint = "https://reqres.in/api/login";
         String body = """
                 {
                 "email": "peter@klaven" 
@@ -293,7 +314,7 @@ public class ApiTests extends RestAssuredBaseTest {
                         header("Content-Type","application/json").
                         body(body).
                 when().
-                        post(endpoint).
+                        post(endpointLogin).
                 then().
                         log().body().
                         assertThat().
@@ -305,21 +326,20 @@ public class ApiTests extends RestAssuredBaseTest {
     @Test
     public void getDelayResponse() {
         log.info("Get delay response");
-        String endpoint = "https://reqres.in/api/users?delay=3";
-        var response =
-                given().
-                when().
-                        get(endpoint).
-                then().
-                        assertThat().
-                        statusCode(200);
+
+        given().
+        when().
+                get(endpointDelayedResponse).
+        then().
+                assertThat().
+                statusCode(200);
+
         log.info("Finish getting delay response ");
     }
 
     @Test
     public void createSerializedUser() {
         log.info("Create serialized user");
-        String endpoint = "https://reqres.in/api/users";
         User user = new User(
                 "Duyen_Nguyen@epam.com",
                 "Duyen",
@@ -331,7 +351,7 @@ public class ApiTests extends RestAssuredBaseTest {
                         contentType("application/json").
                         body(user).
                 when().
-                        post(endpoint).
+                        post(endpointUser).
                 then().
                         assertThat().
                                 statusCode(201);
@@ -339,5 +359,25 @@ public class ApiTests extends RestAssuredBaseTest {
         log.info("Finish creating serialized user");
     }
 
+//    @Test
+//    public void createDeserializedUser() {
+//        log.info("Create deserialized user");
+//        String endpoint = "https://reqres.in/api/users/2";
+////        User user = new User(
+////                "Duyen_Nguyen@epam.com",
+////                "Duyen",
+////                "Nguyen",
+////                "this is my avatar."
+////        );
+//        User actualUser =
+//                given().
+//                        //contentType("application/json").
+//                        queryParam("id", "2").
+//                when().
+//                        get(endpoint).
+//                                as(User.class);
+//
+//        log.info("Finish creating deserialized user");
+//    }
 
 }

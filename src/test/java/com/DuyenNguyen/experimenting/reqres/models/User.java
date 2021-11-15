@@ -1,5 +1,7 @@
 package com.DuyenNguyen.experimenting.reqres.models;
 
+import org.openqa.selenium.json.Json;
+
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;    // https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/XmlRootElement.html
 
@@ -11,6 +13,10 @@ public class User {
     private String last_name;
     private String avatar;
     private String job;
+    private String url;
+    private String text;
+    private Json data;
+    private Json support;
 
     public User() {
     }
